@@ -28,7 +28,7 @@ struct TilePosition {
 // Matches the tile of the winner to the game state
 GameState whoWonWithTile(TileValue tile) {
     assert(tile != TileValue::Empty);
-    tile == TileValue::Circle ? GameState::UserWon : GameState::PcWon;
+    return tile == TileValue::Circle ? GameState::UserWon : GameState::PcWon;
 }
 
 // Returns the character corresponding to the given tile value
