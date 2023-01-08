@@ -1,0 +1,1 @@
+g++ -I stb main.cpp
